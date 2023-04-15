@@ -8,42 +8,46 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<label for="name">Name : </label>
-	<input type="text" name="name" required>
-	<label for="email">Email : </label>
-	<input type="email" name="email"  required>
-	
-	<label for="gender">Gender :</label>
-	<label for="male">Male</label>
-	<input type="radio" name="gender"  required>
-	<label for="female">Female</label>
-	<input type="radio" name="gender"  required>
-	
-	<label for="brands">Car Brands: </label>
-	<select  required>
-		<option>BMW</option>
-		<option>AUDI</option>
-		<option>MERCEDES</option>
-	</select>
-	
-	<label for="age">Age : </label>
-	<input type="text" name="age">
 
+	<form method="get">
+		
+		<label for="name">Name : </label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email : </label>
+		<input type="email" id="email" name="email"  required>
+		
+		<label for="gender">Gender :</label>
+		<label for="male">Male</label>
+		<input type="radio" id="gender_m" name="gender"  required>
+		<label for="female">Female</label>
+		<input type="radio" id="gender_f" name="gender"  required>
+		
+		<label for="brands">Car Brands: </label>
+		<select  id="cars" required>
+			<option>BMW</option>
+			<option>AUDI</option>
+			<option>MERCEDES</option>
+		</select>
+		
+		<label for="age">Age : </label>
+		<input type="text" id="age" name="age" required>
 	
-	<label for="date">Date : </label>
-	<input type="date" name="date">
-
-	<label for="phone">Phone no : </label>
-	<input type="tel" name="phone">
-
+		
+		<label for="dob">Date : </label>
+		<input type="date"  id="dob" name="dob" required>
 	
-	<label for="password">Passsword : </label>
-	<input type="password" name="password">
-
-	<label for="checkbox">Checkbox : </label>
-	<input type="checkbox" name="checkbox">
-
-	<input type="submit" value="submit">
+		<label for="phone">Phone no : </label>
+		<input type="tel" id="tel" name="phone">
+	
+		
+		<label for="password">Passsword : </label>
+		<input type="password" id="password" name="password" required>
+	
+		<label for="checkbox">Checkbox : </label>
+		<input type="checkbox" name="checkbox" required>
+	
+		<input type="submit" value="submit">
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
